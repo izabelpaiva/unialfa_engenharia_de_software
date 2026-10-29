@@ -1,0 +1,15 @@
+Atividade (28/10/26)
+
+01. Faça um comparativo entre as arquiteturas de computadores de 8, 16, 32 e 64 bits.
+
+O número de bits indica a largura da palavra, ou seja, a quantidade de dados que o processador consegue processar de uma só vez em seus registradores e na ULA. Quanto maior essa largura, mais informação ele trata por ciclo e maior é a quantidade de memória que consegue acessar.
+Os processadores de 8 bits trabalham com 256 valores por registrador e endereçam cerca de 64 KB de memória. Foram usados nos computadores domésticos dos anos 70 e 80 e ainda aparecem em microcontroladores simples, como os do Z80 e do 6502.
+Os de 16 bits trabalham com 65.536 valores por registrador e endereçam de 1 MB a 16 MB, dependendo do chip. Foram a base dos primeiros PCs com MS-DOS, como os baseados no Intel 8086 e no 80286.
+Os de 32 bits trabalham com cerca de 4,29 bilhões de valores e endereçam até 4 GB de memória RAM. Dominaram os computadores das décadas de 1990 e 2000, com o Intel 80386, o Pentium e sistemas como o Windows 95 e o XP.
+Os de 64 bits trabalham com cerca de 18 quintilhões de valores e podem endereçar, em teoria, 16 exabytes de memória. São o padrão atual em PCs, servidores e celulares, com processadores como Intel Core, AMD Ryzen e Apple M. O limite de 4 GB dos 32 bits foi o principal motivo da migração. Além disso, os processadores de 64 bits executam programas de 32 bits, mas o contrário não é possível.
+
+02. Por que não existem arquiteturas de 128, 256 e 512 bits?
+
+Como arquitetura geral de CPU, elas não existem porque não há necessidade nem vantagem em tê-las. Os 64 bits já permitem endereçar 16 exabytes, muito mais memória do que qualquer computador usa ou usará em um futuro próximo. Além disso, a maioria dos dados do dia a dia, como números inteiros, textos e números decimais, cabe em 32 ou 64 bits, então registradores maiores ficariam quase sempre subutilizados.
+Há também o custo: registradores, barramentos e caches maiores aumentam o tamanho do chip, o consumo de energia e o calor gerado, e o ganho de desempenho seria pequeno. Dobrar a largura não dobra a velocidade, e costuma ser mais eficiente aumentar o número de núcleos e o tamanho do cache.
+Apesar disso, larguras de 128, 256 e 512 bits existem em partes específicas do processador, como as instruções vetoriais SIMD (SSE, AVX e AVX-512), que processam vários dados ao mesmo tempo, além de GPUs e barramentos de memória. Mesmo assim, a CPU continua sendo considerada de 64 bits.
